@@ -21,5 +21,5 @@ function addTodo(event) {
     $list.append($newTodoItem)
 }
 function changeColor(){
-    $head.style.backgroundColor = 'red'
+    $head.style.color = 'red'
 }
