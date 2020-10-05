@@ -7,6 +7,7 @@ let $list = document.getElementById('list')
 let $head = document.getElementById('header')
 $button.onclick = addTodo
 $head.onclick = changeColor
+$head.ondblclick = changeColorTwo
 //define the button click handler
 function addTodo(event) {
     //console.log("button was clicked")
@@ -22,4 +23,7 @@ function addTodo(event) {
 }
 function changeColor(){
     $head.style.color = 'red'
+}
+function changeColorTwo(){
+    $head.style.color = 'black'
 }
