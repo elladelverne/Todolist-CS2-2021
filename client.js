@@ -4,8 +4,9 @@ console.log('script loaded')
 let $button = document.getElementById('addTodo')
 let $textbox = document.getElementById('userInput')
 let $list = document.getElementById('list')
+let $head = document.getElementById('header')
 $button.onclick = addTodo
-
+$head.onclick = changeColor
 //define the button click handler
 function addTodo(event) {
     //console.log("button was clicked")
@@ -18,4 +19,7 @@ function addTodo(event) {
     $newTodoItem.innerHTML= newTodoText
     //list item in list
     $list.append($newTodoItem)
+}
+function changeColor(){
+    $head.style.backgroundColor = 'red'
 }
