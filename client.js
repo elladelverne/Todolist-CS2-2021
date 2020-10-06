@@ -19,7 +19,7 @@ function addTodo(event) {
     $textbox.value = ''
     //creat new list item
     let $newTodoItem = document.createElement('li')
-    $newTodoItem.innerHTML= `${newTodoText}<button onclick='taskDone(event)'>Done</button><button onclick='deleteTask(event)'>Delete</button>`
+    $newTodoItem.innerHTML= `${newTodoText} <button onclick='taskDone(event)'>Done</button> <button onclick='deleteTask(event)'>Delete</button>`
     
     //list item in list
     $list.append($newTodoItem)
